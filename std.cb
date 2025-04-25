@@ -1,0 +1,21 @@
+f print(text: str) -> void {
+    ugly {
+        std::cout << text << std::flush;
+    }
+}
+
+
+f printnl(text: str) -> void {
+    ugly {
+        std::cout << text << std::endl;
+    }
+}
+
+f input(text: str) -> str {
+    ugly {
+        std::cout << text << std::flush;
+        std::string s;
+        std::getline(std::cin, s);
+        return s;
+    }
+}
